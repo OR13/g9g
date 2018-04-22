@@ -6,7 +6,7 @@
   "scripts": {
     "test": "CI=true react-scripts test --env=node --forceExit",
     "docker:build": "docker build -t or13/g9g .",
-    "docker:run": "docker run -it or13/g9g",
+    "docker:run": "docker run -v `pwd`/docs:/usr/src/app/docs -it or13/g9g ",
     "docker:test": "npm run docker:build && npm run docker:run ./setup.sh"
   },
   "repository": {
