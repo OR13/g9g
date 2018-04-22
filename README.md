@@ -2,6 +2,8 @@
 
 DO NOT USE.
 
+[![Build Status](https://travis-ci.org/OR13/g9g.svg?branch=master)](https://travis-ci.org/OR13/g9g)
+
 #### READING
 
 - http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/
