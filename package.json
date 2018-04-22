@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "CI=true react-scripts test --env=node --forceExit",
+    "clean": "rm -rf ./data/*",
+    "test": "react-scripts test --env=node",
+    "test:ci": "CI=true react-scripts test --env=node --forceExit",
     "docker:build": "docker build -t or13/g9g .",
-    "docker:run": "docker run -v `pwd`/docs:/usr/src/app/docs -it or13/g9g ",
-    "docker:test": "npm run docker:build && npm run docker:run ./setup.sh"
+    "docker:run": "docker run -v `pwd`/data:/usr/src/app/data -it or13/g9g ",
+    "docker:test": "npm run clean && npm run docker:build && npm run docker:run ./setup.sh"
   },
   "repository": {
     "type": "git",
@@ -20,9 +22,11 @@
   },
   "homepage": "https://github.com/OR13/g9g#readme",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "gpg": "^0.6.0"
   },
   "devDependencies": {
-    "react-scripts": "^1.1.4"
+    "react-scripts": "^1.1.4",
+    "shelljs": "^0.8.1"
   }
 }

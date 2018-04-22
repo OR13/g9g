@@ -1,0 +1,12 @@
+sudo: required
+
+language: nodejs
+
+services:
+  - docker
+
+before_script:  
+  - npm i
+
+script: 
+  - npm run test
