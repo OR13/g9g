@@ -1,0 +1,28 @@
+{
+  "name": "g9g",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "CI=true react-scripts test --env=node --forceExit",
+    "docker:build": "docker build -t or13/g9g .",
+    "docker:run": "docker run -it or13/g9g",
+    "docker:test": "npm run docker:build && npm run docker:run ./setup.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OR13/g9g.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OR13/g9g/issues"
+  },
+  "homepage": "https://github.com/OR13/g9g#readme",
+  "dependencies": {
+    "gpg": "^0.6.0"
+  },
+  "devDependencies": {
+    "react-scripts": "^1.1.4"
+  }
+}
