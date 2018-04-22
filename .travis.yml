@@ -1,12 +1,5 @@
 sudo: required
-
-language: nodejs
-
-services:
-  - docker
-
-before_script:  
-  - npm i
+dist: trusty
 
 script: 
-  - npm run test
+  - npm run docker:test
