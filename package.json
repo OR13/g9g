@@ -23,7 +23,11 @@
   "homepage": "https://github.com/OR13/g9g#readme",
   "dependencies": {
     "bluebird": "^3.5.1",
-    "gpg": "^0.6.0"
+    "ethereumjs-util": "^5.2.0",
+    "ethereumjs-wallet": "^0.6.0",
+    "gpg": "^0.6.0",
+    "libsodium-wrappers": "^0.7.3",
+    "openpgp": "^3.0.8"
   },
   "devDependencies": {
     "react-scripts": "^1.1.4",
